@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --white: #ffffff;
+    --gray200: #dedddf;
+    --gray400: #acb4be;
+    --purple950: #21092f;
+    --gradient: #6448fe to #600594; /*active input border*/
+    --red400: #ff5252; /*input errors*/
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Space Grotesk', sans-serif;    
+    font-weight: 500;
+    color: var(--purple950);
+    background: var(--white);
+}
