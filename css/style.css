@@ -22,3 +22,82 @@ body{
     color: var(--purple950);
     background: var(--white);
 }
+
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+
+input{
+    font-family: 'Space Grotesk', sans-serif;
+    color: var(--gray400);
+    font-size: 1.125rem;
+    border: 0.1rem solid var(--gray200);
+    border-radius: 0.35rem;
+    padding: 0.5rem;
+    min-width: 10rem;
+}
+
+label{
+    font-size: 1rem;
+}
+
+.card-details, 
+.card-name,
+.card-number,
+.exp-date-and-cvc,
+.exp-date,
+.date,
+.cvc
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.card-name,
+.card-number,
+.exp-date,
+.cvc {
+    gap: 0.5rem;
+}
+
+.card-details{
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.exp-date-and-cvc{
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.exp-date-and-cvc input{
+    min-width:4rem;
+}
+
+
+.exp-date{
+    width: 50%;
+}
+
+.date{
+    flex-direction: row;   
+
+}
+
+.cvc{
+    flex: 2;
+}
+
+.confirm-btn {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 500;
+    font-size: 1.125rem;
+    background: var(--purple950);
+    color: var(--gray200);
+    padding: 1rem;
+    border: none;
+    border-radius: 0.4rem;
+}
