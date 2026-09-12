@@ -1,83 +1,86 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style.css" />
 
-  <style>
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
-</style>
-  
-  <title>Frontend Mentor | Interactive card details form</title>
-</head>
-<body>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap");
+    </style>
 
-  <section class="card-image">
-
-    <section class="card-sides">
-
-    <section class="card-back">
-      <section class="card-image-cvc">000</section>
-    </section>
-    <section class="card-front">
-      
-        <img class="card-logo" src="./images/card-logo.svg" alt="">
-
-        <section class="card-image-number">0000 0000 0000 0000</section>
-        <section class="text-container">
-
-          <section class="name">JANE APPLESEED</section>
-          <section class="date">00/00</section>
-
+    <title>Frontend Mentor | Interactive card details form</title>
+  </head>
+  <body>
+    <section class="card-image">
+      <section class="card-sides">
+        <section class="card-back">
+          <section class="card-image-cvc">000</section>
         </section>
-    </section>
-  </section>
-  </section>
+        <section class="card-front">
+          <img class="card-logo" src="./images/card-logo.svg" alt="" />
 
-  <main>
-    <section class="card-details">
-    <section class="card-name">
-      <label for="cardholder name">CARDHOLDER NAME</label>
-      <input type="text" placeholder="e.g. Jane Appleseed">
-    </section>
-
-    <section class="card-number">
-      <label for="card number">CARD NUMBER</label>
-      <input type="text" placeholder="e.g. 1234 5678 9123 0000">
-    </section>
-
-      <section class="exp-date-and-cvc">
-
-      <section class="exp-date">
-      <label for="expiry date">EXP. DATE (MM/YY)</label>
-
-        <section class="date">
-          <input type="number" placeholder="MM" class="month">
-
-          <input type="number" placeholder="YY" class="year">
+          <section class="card-image-number">0000 0000 0000 0000</section>
+          <section class="text-container">
+            <section class="name">JANE APPLESEED</section>
+            <section class="date">00/00</section>
+          </section>
         </section>
       </section>
+    </section>
 
-      <section class="cvc">
-        <label for="cvc">CVC</label>
+    <main>
+      <section class="card-details">
+        <section class="card-name">
+          <label for="cardholder name">CARDHOLDER NAME</label>
+          <input type="text" placeholder="e.g. Jane Appleseed" />
+        </section>
 
-        <input type="number" placeholder="e.g. 123" class="cvcno">
+        <section class="card-number">
+          <label for="card number">CARD NUMBER</label>
+          <input type="text" placeholder="e.g. 1234 5678 9123 0000" />
+        </section>
+
+        <section class="exp-date-and-cvc">
+          <label for="expiry date" style="grid-area: exp-date"
+            >EXP. DATE (MM/YY)</label
+          >
+
+          <label for="cvc" style="grid-area: cvc">CVC</label>
+
+          <input
+            type="number"
+            placeholder="MM"
+            class="month"
+            style="grid-area: month"
+          />
+
+          <input
+            type="number"
+            placeholder="YY"
+            class="year"
+            style="grid-area: year"
+          />
+
+          <input
+            type="number"
+            placeholder="e.g. 123"
+            class="cvcno"
+            style="grid-area: cvcno"
+          />
+        </section>
+
+        <button class="confirm-btn">Confirm</button>
       </section>
-
-      </section>
-    
-      <button class="confirm-btn">
-        Confirm
-      </button>
-
-</section>
-
-
-  </main>
-  
-</body>
+    </main>
+  </body>
 </html>
