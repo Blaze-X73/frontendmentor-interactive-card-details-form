@@ -40,7 +40,90 @@ input {
 
 label {
   font-size: 0.85rem;
+  letter-spacing: 0.1rem;
 }
+
+/*Top Section Start*/
+
+.card-image {
+  background: url(../images/bg-main-mobile.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  margin-bottom: calc(clamp(0.7rem, 0.5rem + 2vw, 1.7rem) * 3.8 + 2rem);
+}
+
+.card-sides{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: calc(clamp(0.7rem, 0.5rem + 2vw, 1.7rem) * -3.8);
+}
+
+.card-back {
+  background: url(../images/bg-card-back.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: clamp(13.375rem, 11rem + 30vw, 26.25rem);
+  aspect-ratio: 447/245;
+  letter-spacing: 0.1rem;
+  font-size: clamp(0.7rem, 0.5rem + 2vw, 1.7rem);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0 4rem 0 0;
+  margin-right: calc(clamp(0.7rem, 0.5rem + 2vw, 1.7rem) * -4);
+}
+
+.card-image-cvc {
+  margin-bottom: calc(clamp(0.7rem, 0.5rem + 2vw, 1.7rem) / 4);
+}
+
+.card-front {
+  background: url(../images/bg-card-front.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: clamp(13.375rem, 11rem + 30vw, 26.25rem);
+  aspect-ratio: 447/245;
+  letter-spacing: 0.1rem;
+  margin-right: calc(clamp(0.7rem, 0.5rem + 2vw, 1.7rem) * 4);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: calc(clamp(0.7rem, 0.5rem + 2vw, 1.7rem));
+  padding: calc(clamp(0.7rem, 0.5rem + 2vw, 1.7rem) * 1.2);
+  z-index: 1000;
+  margin-top: calc(clamp(0.7rem, 0.5rem + 2vw, 1.7rem) * -4.29);
+}
+
+.card-logo {
+  margin-bottom: auto;
+  width: calc(clamp(0.7rem, 0.5rem + 2vw, 1.7rem) * 4);
+}
+
+.card-image-number {
+  font-size: calc(clamp(0.7rem, 0.5rem + 2vw, 1.7rem) * 1.1);
+  text-align: justify;
+  text-align-last: justify;
+  white-space: nowrap;
+  letter-spacing: calc(clamp(0.7rem, 0.5rem + 2vw, 1.7rem) / 5.5);
+  width: 100%;
+}
+
+.text-container {
+  display: flex;
+  font-size: calc(clamp(0.7rem, 0.5rem + 2vw, 1.7rem) / 1.5);
+  justify-content: space-between;
+}
+
+/*Top Section End*/
 
 .card-details,
 .card-name,
@@ -88,8 +171,8 @@ input {
   gap: 1rem;
 }
 
-.date input{
-    flex-shrink: 1;
+.date input {
+  flex-shrink: 1;
 }
 
 .confirm-btn {
